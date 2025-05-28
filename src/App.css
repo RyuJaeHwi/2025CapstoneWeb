@@ -1,0 +1,6 @@
+/* 전체 페이지 가로 스크롤 제거 */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}

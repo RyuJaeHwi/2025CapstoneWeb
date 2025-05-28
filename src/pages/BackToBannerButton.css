@@ -1,0 +1,9 @@
+.back-button {
+  position: absolute;
+  top: 40px;
+  right: 80px; /* 기존에 없던 설정 추가! 오른쪽에서 살짝 안쪽으로 */
+  width: 150px;  /* 버튼이 작아 보인다면 여기도 키워줄 수 있음 */
+  cursor: pointer;
+  z-index: 10;
+}
+

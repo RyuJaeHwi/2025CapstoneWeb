@@ -1,0 +1,151 @@
+.thirdpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/page3/BackGround3.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.stage-button-list {
+  position: absolute;
+  left: 8%;
+  bottom: 13%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.stage-button {
+  width: 140px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.stage-button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(92, 0, 78, 0.273);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+.popup-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  width: 1000px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.popup-close {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 38px;
+  height: auto;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.popup-inner {
+  position: absolute;
+  top: 180px;
+  left: 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 40px;
+  width: 880px;
+}
+
+.popup-stage-image {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.popup-text {
+  flex: 1;
+  color: #333;
+  font-size: 20px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.popup-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.popup-text p {
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+
+.popup-stage4-layout {
+  position: absolute;
+  top: -70px;
+  left: 50%;
+  transform: translateX(-50%); /* 가운데 정렬 */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.popup-stage4-images {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.popup-stage4-img {
+  width: 280px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+.popup-stage4-text {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 800px;
+}
+
+.popup-stage4-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.popup-stage4-text p {
+  font-size: 15px;
+  line-height: 1.7;
+}

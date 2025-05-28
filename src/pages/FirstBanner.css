@@ -1,0 +1,33 @@
+.firstbanner {
+  width: 100vw;
+  aspect-ratio: 1920 / 350;
+  background-image: url('/banner1/Banner1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-container-horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-button {
+  width: 200px;
+  height: auto;
+  cursor: pointer;
+  transition: all 0.2s ease; /* ✅ 부드럽게 */
+}
+
+.banner-button:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}

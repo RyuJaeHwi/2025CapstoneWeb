@@ -1,0 +1,62 @@
+.firstpage {
+  height: 100vh;
+  width: 100vw;
+  background-image: url('/page1/BackGround1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.game_title {
+  position: absolute;
+  bottom: 52%;
+  left: 60%;
+  width: 35vw;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+.link-button-container {
+  position: absolute;
+  right: 130px;
+  bottom: 70px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Notion 버튼 스타일 */
+.notion-button {
+  width: 130px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.notion-button:hover {
+  transform: scale(1.05);
+}
+
+/* Download 버튼 스타일 */
+.download-button {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.download-button:hover {
+  transform: scale(1.05);
+}
+
+.notion-button {
+  width: 130px;
+  align-self: flex-end;
+}
+
+.download-button {
+  width: 180px;
+  align-self: flex-end;
+}
