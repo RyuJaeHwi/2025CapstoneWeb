@@ -17,14 +17,12 @@ function FirstPage() {
             className="notion-button"
           />
         </a>
-
-        <a href="/2025Cap.zip" download="MysticTalesGame.zip">
-          <img
-            src="/page1/DownloadButton.png"
-            alt="Download Button"
-            className="download-button"
-          />
-        </a>
+{/* 
+        <img
+          src="/page1/DownloadButton.png"
+          alt="Download Button"
+          className="download-button"
+        /> */}
       </div>
     </div>
   );
