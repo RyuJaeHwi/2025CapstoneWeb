@@ -20,7 +20,7 @@ function BackToBannerButton() {
 
   return (
     <img
-      src="/common/BackToBanner1.png"
+      src={`${import.meta.env.BASE_URL}common/BackToBanner1.png`}
       alt="Back to Top"
       className="back-button"
       onClick={scrollToTopBanner}

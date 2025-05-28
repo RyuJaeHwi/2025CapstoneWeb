@@ -1,7 +1,7 @@
 .firstbanner {
   width: 100vw;
   aspect-ratio: 1920 / 350;
-  background-image: url('/banner1/Banner1.png');
+  background-image: url('/2025CapstoneWeb/banner1/Banner1.png'); /* 절대경로 수정 */
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,6 +11,7 @@
   align-items: center;
   justify-content: center;
 }
+
 
 .button-container-horizontal {
   display: flex;

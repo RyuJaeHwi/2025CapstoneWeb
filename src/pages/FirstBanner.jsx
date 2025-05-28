@@ -26,19 +26,19 @@ function FirstBanner() {
     <div className="firstbanner" id="firstbanner">
       <div className="button-container-horizontal">
         <img
-          src="/banner1/GoIntroButton.png"
+          src={`${import.meta.env.BASE_URL}banner1/GoIntroButton.png`}
           alt="Intro Button"
           className="banner-button"
           onClick={scrollToSecondPage}
         />
         <img
-          src="/banner1/GoStagePageButton.png"
+          src={`${import.meta.env.BASE_URL}banner1/GoStagePageButton.png`}
           alt="Stage Button"
           className="banner-button"
           onClick={scrollToThirdPage}
         />
         <img
-          src="/banner1/GoThemeButton.png"
+          src={`${import.meta.env.BASE_URL}banner1/GoThemeButton.png`}
           alt="Theme Button"
           className="banner-button"
           onClick={scrollToFourthPage}

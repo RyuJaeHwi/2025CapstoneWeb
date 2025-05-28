@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
 
-  background-image: url('/page4/BackGround4.png');
+  background-image: url('/2025CapstoneWeb/page4/BackGround4.png'); /* ✅ 수정 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -13,16 +13,16 @@
 /* 시놉시스 텍스트 이미지 위치 조정 */
 .synopsis-title {
   position: absolute;
-  top: 150px;     /* 위에서 약간 떨어짐 */
-  right: 80px;    /* 왼쪽에서 약간 떨어짐 */
+  top: 150px;
+  right: 80px;
   width: 350px;
   height: auto;
 }
 
 .synopsis-description {
   position: absolute;
-  top: 320px;     /* 시놉시스 타이틀 아래로 간격 */
-  right: 70px;    /* 시놉시스 타이틀보다 약간 더 안쪽 */
+  top: 320px;
+  right: 70px;
   width: 600px;
   height: auto;
 }

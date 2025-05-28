@@ -1,7 +1,7 @@
 .firstpage {
   height: 100vh;
   width: 100vw;
-  background-image: url('/page1/BackGround1.png');
+  background-image: url('/2025CapstoneWeb/page1/BackGround1.png'); /* 경로 수정 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,35 +21,35 @@
   position: absolute;
   right: 130px;
   bottom: 70px;
-
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-/* Notion 버튼 스타일 */
 .notion-button {
   width: 130px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
+  align-self: flex-end;
 }
 
 .notion-button:hover {
   transform: scale(1.05);
 }
 
-/* Download 버튼 스타일 */
 .download-button {
   width: 180px;
   height: auto;
   cursor: pointer;
   transition: transform 0.2s ease;
+  align-self: flex-end;
 }
 
 .download-button:hover {
   transform: scale(1.05);
 }
+
 
 .notion-button {
   width: 130px;

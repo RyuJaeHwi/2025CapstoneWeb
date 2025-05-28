@@ -1,7 +1,7 @@
 .thirdpage {
   height: 100vh;
   width: 100vw;
-  background-image: url('/page3/BackGround3.png');
+  background-image: url('/2025CapstoneWeb/page3/BackGround3.png'); /* 경로 수정 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,6 +10,9 @@
   margin: 0;
   padding: 0;
 }
+
+/* 나머지 클래스는 동일 (생략 없이 그대로 사용 가능) */
+
 
 .stage-button-list {
   position: absolute;

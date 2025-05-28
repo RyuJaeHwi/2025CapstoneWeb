@@ -8,12 +8,12 @@ function SecondPage() {
 
       <div className="instruction-row">
         <img
-          src="/page2/Intro.png"
+          src={`${import.meta.env.BASE_URL}page2/Intro.png`}
           alt="Intro"
           className="intro-image"
         />
         <img
-          src="/page2/BasicStand.png"
+          src={`${import.meta.env.BASE_URL}page2/BasicStand.png`}
           alt="Basic Stand"
           className="stand-image"
         />

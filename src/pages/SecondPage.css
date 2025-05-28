@@ -2,7 +2,7 @@
   height: 100vh;
   width: 100vw;
 
-  background-image: url('/page2/BackGround2.png');
+  background-image: url('/2025CapstoneWeb/page2/BackGround2.png'); /* ✅ 수정됨 */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -23,11 +23,11 @@
 }
 
 .intro-image {
-  width: 450px; /* 왼쪽 이미지 더 큼 */
+  width: 450px;
   height: auto;
 }
 
 .stand-image {
-  width: 300px; /* 오른쪽 이미지 작게 */
+  width: 300px;
   height: auto;
 }

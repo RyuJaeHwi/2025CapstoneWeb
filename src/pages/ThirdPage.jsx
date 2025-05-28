@@ -3,7 +3,7 @@ import BackToBannerButton from './BackToBannerButton';
 import { useState } from 'react';
 
 function ThirdPage() {
-  const [popupStage, setPopupStage] = useState(null); // null | 1 | 2 | 3 | 4
+  const [popupStage, setPopupStage] = useState(null);
 
   const handleOpenPopup = (stage) => {
     setPopupStage(stage);
@@ -13,60 +13,29 @@ function ThirdPage() {
     setPopupStage(null);
   };
 
+  const base = import.meta.env.BASE_URL;
+
   return (
     <div className="thirdpage" id="thirdpage">
       <BackToBannerButton />
 
       <div className="stage-button-list">
-        <img
-          src="/page3/Stage1.png"
-          alt="Stage1"
-          className="stage-button"
-          onClick={() => handleOpenPopup(1)}
-        />
-        <img
-          src="/page3/Stage2.png"
-          alt="Stage2"
-          className="stage-button"
-          onClick={() => handleOpenPopup(2)}
-        />
-        <img
-          src="/page3/Stage3.png"
-          alt="Stage3"
-          className="stage-button"
-          onClick={() => handleOpenPopup(3)}
-        />
-        <img
-          src="/page3/Stage4.png"
-          alt="Stage4"
-          className="stage-button"
-          onClick={() => handleOpenPopup(4)}
-        />
+        <img src={`${base}page3/Stage1.png`} alt="Stage1" className="stage-button" onClick={() => handleOpenPopup(1)} />
+        <img src={`${base}page3/Stage2.png`} alt="Stage2" className="stage-button" onClick={() => handleOpenPopup(2)} />
+        <img src={`${base}page3/Stage3.png`} alt="Stage3" className="stage-button" onClick={() => handleOpenPopup(3)} />
+        <img src={`${base}page3/Stage4.png`} alt="Stage4" className="stage-button" onClick={() => handleOpenPopup(4)} />
       </div>
 
       {popupStage && (
         <div className="popup-overlay">
           <div className="popup-box">
-            <img
-              src="/page3/closebutton.png"
-              alt="Close"
-              className="popup-close"
-              onClick={handleClosePopup}
-            />
-            <img
-              src="/page3/PopupBox.png"
-              alt="Popup Background"
-              className="popup-content"
-            />
+            <img src={`${base}page3/closebutton.png`} alt="Close" className="popup-close" onClick={handleClosePopup} />
+            <img src={`${base}page3/PopupBox.png`} alt="Popup Background" className="popup-content" />
 
             <div className="popup-inner">
               {popupStage === 1 && (
                 <>
-                  <img
-                    src="/page3/Stage1Image.png"
-                    alt="Stage1"
-                    className="popup-stage-image"
-                  />
+                  <img src={`${base}page3/Stage1Image.png`} alt="Stage1" className="popup-stage-image" />
                   <div className="popup-text">
                     <h3>Stage 1</h3>
                     <p>
@@ -79,11 +48,7 @@ function ThirdPage() {
 
               {popupStage === 2 && (
                 <>
-                  <img
-                    src="/page3/Stage2Chess.png"
-                    alt="Stage2"
-                    className="popup-stage-image"
-                  />
+                  <img src={`${base}page3/Stage2Chess.png`} alt="Stage2" className="popup-stage-image" />
                   <div className="popup-text">
                     <h3>Stage 2</h3>
                     <p>
@@ -96,11 +61,7 @@ function ThirdPage() {
 
               {popupStage === 3 && (
                 <>
-                  <img
-                    src="/page3/Stage3Water.png"
-                    alt="Stage3"
-                    className="popup-stage-image"
-                  />
+                  <img src={`${base}page3/Stage3Water.png`} alt="Stage3" className="popup-stage-image" />
                   <div className="popup-text">
                     <h3>Stage 3</h3>
                     <p>
@@ -114,16 +75,8 @@ function ThirdPage() {
               {popupStage === 4 && (
                 <div className="popup-stage4-layout">
                   <div className="popup-stage4-images">
-                    <img
-                      src="/page3/Stage4Image.png"
-                      alt="Stage4"
-                      className="popup-stage4-img"
-                    />
-                    <img
-                      src="/page3/HiddenStage4Image.png"
-                      alt="HiddenStage4"
-                      className="popup-stage4-img"
-                    />
+                    <img src={`${base}page3/Stage4Image.png`} alt="Stage4" className="popup-stage4-img" />
+                    <img src={`${base}page3/HiddenStage4Image.png`} alt="HiddenStage4" className="popup-stage4-img" />
                   </div>
                   <div className="popup-stage4-text">
                     <h3>Stage 4</h3>
@@ -135,7 +88,6 @@ function ThirdPage() {
                   </div>
                 </div>
               )}
-
             </div>
           </div>
         </div>
